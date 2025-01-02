@@ -1,0 +1,23 @@
+Cook Island GEP: 
+
+- Schedule for event: https://docs.google.com/document/d/1jyaPMycnqo5nAAJkOCdfP40lMgIacXep/edit?pli=1
+- TODO: Create basic outline with quarto and share with Justin as a 'proposal'
+
+- Basics of GEP
+	- Complement to GDP as a flow value
+- Connection to Natural capital and SNA, SEEA, NatCap
+	- The stock value 
+	https://stats.gov.ck/national-accounts/#37-476-wpfd-2024-national-accounts-gross-domestic-product
+- Prior work in Cook Islands
+	https://drive.google.com/file/d/1Ch6y9RQP0UARMH_dMfz9Wa2sqnBprcmR/view
+	https://environment.gov.ck/wp-content/uploads/2022/06/25.-Cook-Islands-MESV-Report-2021.pdf
+- Prior work for Island economies
+	- https://naturalcapitalproject.stanford.edu/projects/projects-asia-pacific
+- Sectors we would focus on for GEP in Cook Islands
+	- list of sectors
+	- information we would need for P, Q, and \lambda 
+- Ways to present information
+	- Table of Accounts 
+	- If any time dimension, show trend lines
+	- Some comparision of GDP accounts to GEP accounts
+- What we need from folks in Cook Island to estimate GEP (as accounting measure moving forward by SNA)
