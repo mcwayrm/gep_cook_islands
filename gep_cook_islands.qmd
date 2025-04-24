@@ -27,10 +27,11 @@ Gross ecosystem product (GEP) is emerging as a useful corralary to gross domesti
 This value of the flow of ecosystem services into economy from environmental factors is summarized by a simple accounting identity. 
 
 $$
-GEP = \lambda \times P \times Q
+GEP = \sum_{e \in E} \lambda_e \times P_e \times Q_e
 $$
 
 This equation states that the gross production value of ecosystem services in equivilent to the unit price of the service (P), the quantity supplied (used) of the service (Q), and a weight for the percentage contribution of the ecosystem service dervied from nature's contribtuion ($\lambda$). 
+For each ecosystem service $e$ in the set of ecoystem services considered $E$, simply aggregate the total production value across all services to estimate a national GEP. A simple panel could be estimated by adding a time script if desired. 
 The quantity of services provided are estimated using biophysical models. 
 Then prices are determined using either the market value of those services or non-market evaluation techniques to determine a williness-to-pay for the services. 
 And finally, the contribution of nature for the service partials out human contributions such as labor or capital inputs that increase the value of the ecosystem service. 
@@ -70,45 +71,157 @@ Our scope is not limited to the following ecosystem services and we are open to 
 For each service, we define the human benefit derived from the ecosystem and determine the methodology for determine the quantity, price, and nature's contribution values to estimate GEP for that service. 
 Finally, we identify the data we would require to make these estimations. 
 
-## Agriculture 
-- Both commerical and subsistence
+Need to cite here prior work on estimating natural capital for cook islands. 
+Then citations for natural capital for other island economies. 
 
-## Crop Pollination 
-- For main crops produced: Papaya and Taro; also Bananas, coconuts, mango, guava
+Issue of Deep Sea Mining: 
+	- Carbon emissions from disturbed sediment
+	- Raises PH leading to ocean acidification
+
+## Agriculture 
+
+For commerical agriculture, we can use modification of GDP statistics from the agricultural sector.
+This may come from the statistical office of the Cook Islands or from what is reported by the Food and Agriculture Organization (FAO).
+Using the marketed consumption value of commerical agriculture, we have an annual monetary value which already encapsulates both price and quantity. 
+The adjustment that needs to be made is to modify this value by the contribution of nature (as opposed to farm labor or processing) which is the source of that value. 
+The technique proposed is to use a resource rent.
+This is the difference between the marketed value and production cost of producing the commodity. 
+By removing production costs, we are able to extract the market value minus labor and capital inputs. 
+The Changing Wealth of Nation's (CWON) report provides a measure of resource rents at the national level for 2021 and 2024 in the agircultural sector. 
+We can use is as the modification for nature's contribution. 
+
+So, to estimate commerical agriculture GEP we simply need: 
+
+$$
+GEP_{Agr} = (GDP_{Agr}) \times (Resource Rental Rate)
+$$
+
+There is promise to estimating substience agriculture. While agricultural production for own consumption does not permiate through the market, we can use market prices to estimate the implicit value of that production. 
+To estimate quantity, we would a measure of farmer production which is used for own consumption as opposed for commerical use. 
+This could be obtained through a representative survey of farmers.
+This survey would need to follow the FAO own consumption toolkit to assess the portion of agricultural production which is used for consumption as home. 
+This provides the quantity of own consumption as aggregated monetary value per hectare of farmable land. 
+Using this estimate, we need to estimate the number of small-holder farmers in the country and the size of their plots. 
+Multiplying the number of hectares by this average value estimates the total value of non-commerical agricultural production. 
+Some capital investments (i.e., shovels, plows, etc.) and farm labor, a similar resource rental rate adjustment is necessary. 
+It is unclear that nature's contribution from agriculture will be higher for subsistence vs commerical production. 
+But, supposing that subsistence agriculture relies more heavily on natural inputs, using the same CWON rental rates will produce a lower bound estimate of GEP for subsistence agriculture. 
+
+We can estimate subsistence agriculture GEP through the following:
+
+$$
+GEP_{AgrOwn} = (Hectares Farmland) \times (Own Consumption Value) \times (Resource Rental Rate)
+$$
+
+
+If it is possible to disaggregate production by the type of crop produced, then these two GEP values can provide a rich sense of ecosystem service value for both cash crops and household staples.
+Combining both commercial and subsistence agriculture, the total GEP for agriculture is:
+
+$$
+GEP_{Agriculture} = GEP_{Agr} + GEP_{AgrOwn}
+$$
+
+## Crop (Fruit) Pollination 
+
+Wild pollinators support the production of several agricultural products in the Cook Islands. 
+In particular, papaya, taro, bananas, coconuts, mango, and guava.
+Using InVEST's crop pollination model, we can use land use land cover (LULC) data with high spatial resolution to determine pollinator abundance. Further, if we have access to polygons for agricutlural plots we can estimate the contribution of pollinators to these plots. 
+This provides the estimate of nature's contribtuion through pollination to agricultural products. 
+But to determine the monetary value of this service, we need to match market prices for agricultural commodities with the crops produced. This requires a raster layer of what crops are produced where.
+Combined with the raster of pollination inputs to agriculture, we have a quantity measure of crop pollination adjusted for the nature contribution from pollinators to crop production. 
+Multiplying this quantity with annual crop prices estimates the GEP value of crop production. 
+
+This is summarized in the following formula summarizing over crops (c) and plots (p): 
+
+$$
+GEP_{Poll} = \sum_c \sum_p (PollAbundance)_p \times (CropProd)_{cp} \times (CropPrice)_c
+$$
+
+	- Service: Pollination for main fruits of cook islands: mangos, bananas, coconuts, pawpaw, dragon fruit, star fruit, 
+	- Quantity: Pollinator abundance of flies, insects, birds for pollinator dependecy of these fruits
+	- Price: Market price
 
 ## Fisheries 
-- fish
+
+For commerical fisheries, we can use a similar method as commerical agriculture and rely on GDP values of fisheries with an adjustement for resource rents. CWON estimates of national resource rents for fisheries can be used for the adjustment factor. 
+
+$$
+GEP_{Fish} = (GDP_{Fish}) \times (Resource Rental Rate)
+$$
+
+Subsistence fisheries is a more novel concept to estimate. The USGS has recently estimated the nutritional value of inland fisheries and translated that into monetary value using replacement cost model (https://www.nature.com/articles/s43016-024-00961-8/tables/2). We could attempt to replicate this method with an adjustment for the size of subsistence fishing in the Cook Islands and shifting to marine fisheries. 
+
+Combining both commercial and subsistence agriculture, the total GEP for agriculture is:
+
+$$
+GEP_{Fisheries} = GEP_{Fish} + GEP_{SubFish}
+$$
+
+## Non-fish Aquaculture
 - perals and trochus
 - sand and coral aggregate
 
-## Forest Products  
+# Water Quality 
+- Nutrient Cycling
+	- Service: Relationship of phytoplankton and decomposition of marine organisms which are transported through ocean currents and wind transport to islands
+	- Price: Avoided cost of nutrient pollution through water treatment for human health or link to production function of fisheries population
+
+## Forestry Products  
+
 - timber products 
 - non-timber products 
+- fuelwood
 
 ## Nature-based Tourism and Recreation 
+
 - Ecotourism 
 - Beach tourism 
 - Recreational fishing and water activities
 
+There is past work for cook islands. So should look at those methods first.
+INCA method, or gdp values with resource rents.
+
 ## Mining
-- Straight from GDP values
+
+- Straight from GDP values with CWON resource rents
+- Deep sea mining trade off with conservation
 
 ## Water Use
+
 - Water demand/use 
 - Waste water disposal 
 - Water quality (COD, NH-N, TP)
+- Inland sediment loads on coastal quality. Something we are not good at right now. We don't have linkage for in-stream process, and river to coastal systems. Biophysically, we would need to build this science to estimate quanties better. 
+- Most difficulty thinking about prices. Maybe something with VSL from pollution. Or loss to fisheries.
 
 ## Coastal Erosion Protection 
 
-
-## Flooding Protection
-
+- InVEST won't work. Need another method 
+- Updated DEM/Lidar
+- Avoided cost of property damages
+	- Service: Mangroves and coral reef formation protecting encroachment of sea level rise
+	- Quantity: Quantity of mangrooves and coral reefs from baythemtry
+	- Price: Replacement cost of mangrooves for a sea wall
 
 ## Carbon Storage and Sequestration 
-- Forest cover for CO2 emissions
 
-## Physcial and Mental Health 
-- try to build off methods from Christine's group
+- Forest cover for CO2 emissions
+- InVEST carbon storage model 
+- Social cost of carbon with national adjustment: https://www.rff.org/publications/data-tools/scc-explorer/
+
+- Carbon Storage
+	- Service: Deep sea sediment at high pressure and low temperatures stores CO2
+		CO2 will stay below >3,000 meters
+	- Quantity: Some proxy estimate of carbon storage from baythmetry
+	- Price: Social cost of carbon 
+
+
+## Cultural and Inspiration
+
+	- Service: Island and water as inspiration and cultural importance
+	- Quantity: Artwork related to the sea, festivals related to water
+	- Price: Expenditure on these market events with some modifier for nature's contribution
+
 
 # Outputs
 

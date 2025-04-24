@@ -1,0 +1,176 @@
+---
+title: "Gross Ecosystem Product for the Cook Islands"
+subtitle: Ryan McWay
+author: 
+    name: NatCap TEEMs
+    affiliations: Applied Economics
+date: 04/28/2025
+date-format: long
+format: 
+    clean-revealjs:
+        embed-resources: true
+        title-slide-attributes: 
+            data-background-image: images/UMN9_M-1line-blk.png
+            data-background-size: 25%
+            data-background-position: 4% 97%
+        html-math-method: katex
+        scrollable: true
+        font: "serif"
+---
+
+## Trip to the Cook Islands {.smaller}
+
+::: {.nonincremental} 
+- Thanks to Justin and Steve, I was given the opportunity to visit the Cook Islands.
+- This was a follow up workshop related to the People, Planet, Prosperity (3P) Project.
+- I attended the Cook Islands [3P project](https://naturalcapitalproject.stanford.edu/research/projects/mainstreaming-nature-decisions) follow up meeting. 
+- The Cook Islands are one of 10 countries in this project.
+- The Cook Islands' Project was a collaboration with ADB, Cook Island NES, and Cook Islands MFEM.
+:::
+
+## Trip to the Cook Islands
+![](./images/3P-cook-island.webp){fig-align="center" width=80%}
+
+
+## 3Ps: Cook Islands {.smaller}
+
+::: {.nonincremental} 
+- A major issue for the Cook Islands is coastal flooding and wasterwater pollution. 
+- Specifically in a popular tourist destination -- Muri Lagoon on the main island of Rarotonga. 
+- Over the past year, NatCap Stanford piloted a case study project creating natural capital assessments to assist local members in evaluating options related to potential urban and water projects
+
+![](./images/3p-first-meeting.webp){fig-align="center" width=70%}
+:::
+
+
+## My Goal from the Trip  {.smaller}
+
+::: {.nonincremental} 
+- In the first meeting (2024), GEP was mentioned. 
+- The attendees were excited to learn more about this measure. 
+- So I attended the follow up meeting to introduce the concept (Jan. 2025)
+- My attendance aimed to: 
+1. Educate about GEP
+2. Gauge interest in estimating GEP
+3. Assessing capacity to estimate GEP for Cook Islands
+
+![](./images/workshop-ryan.png){fig-align="center" width=80%  height=50%}
+:::
+
+
+## Muri Lagoon Natural Capital Assessment  {.smaller}
+
+::: {.nonincremental} 
+
+- Muri Lagoon is a major source of economic activity for the country. 
+- But poor coastal management with high tourism is degrading their sacred atolls
+- The NatCap team used InVEST to evaluate counterfactual solutions to improve:
+  - Water treatment (pollution)
+  - Coastal erosion (flooding)
+  - Nutrient runoff
+- To determine financing of these options, NatCap performed a choice experiment to measure Willingness-to-Pay
+  - E.g., price for solutions
+  - Surveyed 420 people: 324 residents, 96 tourists
+:::
+
+## Muri Lagoon: Landcover
+![](./images/assessment-muri-landcover.png)
+
+
+## Muri Lagoon: Recreation Value  
+![](./images/assessment-muri-recreation.png)
+
+## Muri Lagoon: Possible Solutions  
+![](./images/assessment-muri-solutions.png)
+
+## Muri Lagoon: Restoration Benefits  
+![](./images/assessment-muri-restoration.png)
+
+## Muri Lagoon: Willingness-to-Pay 
+![](./images/assessment-muri-wtp.png)
+
+## GEP for Cook Island Trip {.smaller}
+
+::: {.nonincremental} 
+- At the workshop, I presented an introduction to GEP. 
+- There was some interest in the room, but interest dissipated after the workshop. 
+- We met with Minstry of Financial and Economic Management (MFEM) and National Environmental Service (NES)
+- Notably, noone from Statistics attending any meetings
+
+![](./images/nes-logo.png){fig-align="center"}
+:::
+
+## GEP for Cook Island Trip {.smaller}
+
+::: {.nonincremental} 
+> For the Cook Islands, we hit a road block. 
+
+- On the Islands, they do not have funding or capacity to support this project. 
+- They are interested if someone else can estimate GEP, but not themselves. 
+- Estimating GEP independetly would be difficult. 
+  - Data is siloed in departments with no data hub 
+  - Data is often ad hoc and out of date
+- Follow up meetings with NatCap Stanford did not lead to a continuation of the project.
+
+![](./images/muri-lagoon-landscape.jpg){fig-align="center"}
+:::
+
+
+
+## Potential Path Forward {.smaller}
+
+:::: {.columns}
+::: {.column width="60%"}
+- Working with Jade Delevaux (NatCap Stanford)
+- Build guide for practioners to use GEP in practice.
+- Benefits: 
+  - Generates public GEP data sets 
+  - Useful for input to research and assessing environmental progress
+- Jade would like a use case to be Belize 
+  - 10 year partnership, centralized data hub
+:::
+
+::: {.column width="40%"}
+![](./images/jade-delevaux.png){fig-align="center"}
+:::
+::::
+
+
+## Practionier's Guide to GEP {.smaller}
+
+:::: {.columns}
+::: {.column width="60%"}
+::: {.nonincremental} 
+Main Features: 
+- Defining Terminology  
+- Providing methods to measure ecosystem services 
+  - Nature's contribution 
+  - Price
+  - Quantity
+- Discuss equations, data requirements, and limitations
+- Recommendations for reporting standards 
+  - SNA and SEEA EA
+:::
+:::
+
+::: {.column width="40%"}
+![](./images/gep-logo.jpg){fig-align="center"}
+:::
+::::
+
+
+## Hopeful Product has Competition {.smaller}
+
+::: {.nonincremental} 
+> The aim is to produce some living document (website) with best practices. 
+
+- There already appears to be a market for this (competition). 
+  - Two papers in [Ambio](https://link.springer.com/article/10.1007/s13280-023-01948-8) and [J of Resources and Ecology](https://www.jorae.cn/EN/10.5814/j.issn.1674-764x.2022.03.014) spelling out recommendations
+  - JRC Techincal reports on [application](https://edepot.wur.nl/654191) and [theory](file:///C:/Users/ryanm/Downloads/JRC138106_01.pdf)
+  - [Guidelines](https://seea.un.org/sites/seea.un.org/files/1._gross_ecosystem_product_and_ecological_assets_0.pdf) by SEEA EA for integration of GEP.
+  - Ljing has mentioned a Chinese textbook on GEP: "Theory and Method of Gross Ecosystem Product (GEP) Accounting" (English translation next year)
+:::
+
+![](./images/fish.jpg)
+
+
