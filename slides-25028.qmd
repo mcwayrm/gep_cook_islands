@@ -43,7 +43,7 @@ format:
 :::
 
 
-## My Goal from the Trip  {.smaller}
+## My Goal for the Trip  {.smaller}
 
 ::: {.nonincremental} 
 - In the first meeting (2024), GEP was mentioned. 
@@ -94,8 +94,8 @@ format:
 ::: {.nonincremental} 
 - At the workshop, I presented an introduction to GEP. 
 - There was some interest in the room, but interest dissipated after the workshop. 
-- We met with Minstry of Financial and Economic Management (MFEM) and National Environmental Service (NES)
-- Notably, noone from Statistics attending any meetings
+- We met with Minstry of Financial and Economic Management (MFEM) and National Environmental Service (NES).
+- Notably, no one from Statistics attended any meetings.
 
 ![](./images/nes-logo.png){fig-align="center"}
 :::
@@ -140,8 +140,9 @@ format:
 
 :::: {.columns}
 ::: {.column width="60%"}
-::: {.nonincremental} 
+
 Main Features: 
+
 - Defining Terminology  
 - Providing methods to measure ecosystem services 
   - Nature's contribution 
@@ -150,7 +151,7 @@ Main Features:
 - Discuss equations, data requirements, and limitations
 - Recommendations for reporting standards 
   - SNA and SEEA EA
-:::
+
 :::
 
 ::: {.column width="40%"}
@@ -171,6 +172,6 @@ Main Features:
   - Ljing has mentioned a Chinese textbook on GEP: "Theory and Method of Gross Ecosystem Product (GEP) Accounting" (English translation next year)
 :::
 
-![](./images/fish.jpg)
+![](./images/fish.jpg){fig-align="center"}
 
 
